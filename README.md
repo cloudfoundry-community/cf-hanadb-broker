@@ -13,6 +13,9 @@ The broker does not include a SAP HANA DB server. Instead, it is meant to be dep
 ####The new services API is still in progress and may change at any time. 
 
 
+## Running broker
+#### $ rake server [-p <broker port>]
+
 ## Running Tests
 
 The CF SAP HANA Broker integration specs will exercise the catalog fetch, create, bind, unbind, and delete functions against its locally installed database.
@@ -55,7 +58,3 @@ $ bundle
 $ bundle exec rake spec
 
 
-## Running broker
-
-```
-$ rake server [-p <broker port>]

@@ -13,7 +13,7 @@ The broker does not include a SAP HANA DB server. Instead, it is meant to be dep
 ####The new services API is still in progress and may change at any time. 
 
 
-## Running broker
+## Running Broker
 
 #### $ rake server [-p \<broker port\>]
 

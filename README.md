@@ -38,15 +38,7 @@ The CF SAP HANA Broker integration specs will exercise the catalog fetch, create
 		Driver=<path to the HBD ODBC driver>/libodbcHDB.so
 3. Edit  config/database.yml file according with unixODBC DSN
 
-4. Run the following commands
-
-```
-$ cd cf-hanadb-broker
-$ bundle
-$ bundle exec rake spec
-$ rake server [-p <broker port>]
-
-5. Limitations:
+4. Limitations:
   * Specs have only been tested with SAP HANA 1.0 SP6
   * Suggested to prevent passwords expiration and disable "password change on first login" features by executing following SQL statement and DB server restart:
 		
@@ -55,4 +47,10 @@ $ rake server [-p <broker port>]
 	('password policy', 'maximum_password_lifetime') = '90000'
 	WITH RECONFIGURE;
 
+5. Run the following commands
 
+```
+$ cd cf-hanadb-broker
+$ bundle
+$ bundle exec rake spec
+$ rake server [-p <broker port>]

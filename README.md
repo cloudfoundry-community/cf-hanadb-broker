@@ -46,7 +46,7 @@ $ bundle
 $ bundle exec rake spec
 $ rake server [-p <broker port>]
 
-Limitations:
+5. Limitations:
   * Specs have only been tested with SAP HANA 1.0 SP6
   * Suggested to prevent passwords expiration and disable "password change on first login" features by executing following SQL statement and DB server restart:
 		

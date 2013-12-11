@@ -15,7 +15,7 @@ The broker does not include a SAP HANA DB server. Instead, it is meant to be dep
 
 ## Running broker
 
-#### $ rake server [-p "<broker port>"]
+#### $ rake server [-p \<broker port\>]
 
 ## Running Tests
 

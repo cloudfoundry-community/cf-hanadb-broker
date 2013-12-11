@@ -53,4 +53,8 @@ The CF SAP HANA Broker integration specs will exercise the catalog fetch, create
 $ cd cf-hanadb-broker
 $ bundle
 $ bundle exec rake spec
+
+## Running broker
+
+```
 $ rake server [-p <broker port>]

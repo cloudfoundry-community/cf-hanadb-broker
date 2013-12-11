@@ -1,0 +1,27 @@
+# This file should not be used in deployed environments. Instead, the
+# application configuration file specified by SETTINGS_PATH should
+# include the path to a database configuration that includes these
+# settings.
+
+test:
+  adapter: odbc
+  encoding: utf8
+  database: development
+  dsn: hanacloud
+  pool: 5
+  username: <HDB system account name>
+  password: <Password of HDB system account name>
+  host: <HDB instance hostname>
+  port: <HDB instance port>
+
+development:
+  adapter: odbc
+  encoding: utf8
+  database: development
+  dsn: hanacloud
+  pool: 5
+  username: <HDB system account name>
+  password: <Password of HDB system account name>
+  host: <HDB instance hostname>
+  port: <HDB instance port>
+

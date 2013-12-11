@@ -1,0 +1,48 @@
+# This file should not be used in deployed environments. Instead, set
+# the SETTINGS_PATH environment variable to point to a configuration
+# file that contains these settings.
+
+defaults: &defaults
+  database_config_path: 'config/database.yml'
+  log_path: 'log/<%= Rails.env %>.log'
+  auth_username: cc
+
+  services:
+  - name: p-hdb
+    id: 3101b971-1044-4816-a7ac-9ded2e028079
+    guid: 3101b971-1044-4816-a7ac-9ded2e028079
+    description: HDB service for application development and testing
+    tags:
+      - hdb
+      - relational
+    max_db_per_node: 250
+    metadata:
+      provider:
+        name:
+      listing:
+        imageUrl: ~
+        blurb: HDB service for application development and testing
+    plans:
+    - name: 512mb
+      id: 2451fa22-df16-4c10-ba6e-1f682d3dcdc9
+      guid: 2451fa22-df16-4c10-ba6e-1f682d3dcdc9
+      description: Shared HDB Server, 512mb persistent disk, 40 max concurrent connections
+      max_storage_mb: 512 # in MB
+      metadata:
+        cost: 0.0
+        bullets:
+        - content: Shared HDB server
+        - content: 512 MB storage
+        - content: 40 concurrent connections
+
+production:
+  auth_password: 'secret'
+  <<: *defaults
+
+development:
+  auth_password: 'secret'
+  <<: *defaults
+
+test:
+  auth_password: 'secret'
+  <<: *defaults

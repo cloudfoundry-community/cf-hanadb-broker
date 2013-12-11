@@ -1,0 +1,9 @@
+SAP HANA Database broker for Cloud Foundry
+    Copyright 2013 SAP AG.
+
+	This product derived from software at
+		CF MySQL Broker(https://github.com/cloudfoundry/cf-mysql-broker)
+				
+    This product includes and uses software developed at
+    	Ruby RDBI(https://github.com/RDBI/rdbi)
+    	

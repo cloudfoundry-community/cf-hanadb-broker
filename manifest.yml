@@ -1,0 +1,9 @@
+---
+applications:
+- name: cfhdb
+  memory: 256M
+  instances: 1
+  host: cfhdb
+  path: .
+  env:
+    AUTH_TOKEN: secret

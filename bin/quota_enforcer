@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+# Load the Rails application.
+require File.expand_path('../../config/application', __FILE__)
+
+# Initialize the Rails application.
+CfHdbBroker::Application.initialize!
+
+loop do
+  QuotaEnforcer.enforce!
+  sleep 1
+end
